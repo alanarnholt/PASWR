@@ -1,0 +1,17 @@
+Package: PASWR
+Type: Package
+Title: Probability  and Statistics with R
+Version: 1.2
+Date: 2016-02-24
+Author: Alan T. Arnholt
+Maintainer: Alan T. Arnholt <arnholtat@appstate.edu>
+Description: Functions and data sets for the text Probability and Statistics
+    with R.
+Depends:
+    lattice
+Imports:
+    MASS,
+    e1071
+LazyData: TRUE
+License: GPL-2
+RoxygenNote: 5.0.1
