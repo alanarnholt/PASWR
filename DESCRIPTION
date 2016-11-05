@@ -3,8 +3,9 @@ Type: Package
 Title: Probability  and Statistics with R
 Version: 1.2
 Date: 2016-02-24
-Author: Alan T. Arnholt
-Maintainer: Alan T. Arnholt <arnholtat@appstate.edu>
+Authors@R: c(
+    person("Alan", "Arnholt", email = "arnholtat@appstate.edu", role = c("aut", "cre"))
+    )
 Description: Functions and data sets for the text Probability and Statistics
     with R.
 Depends:
