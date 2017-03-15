@@ -6,13 +6,14 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Wilcox Exact Test — wilcoxE.test • PASWR</title>
+<title>wilcoxE.test. PASWR</title>
 
 <!-- jquery -->
 <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha384-nrOSfDHtoPMzJHjVTdCopGqIqeYETSXhZDFyniQ8ZHcVy08QesyHcnOUpMpqnmWq" crossorigin="anonymous"></script>
-<!-- Bootstrap -->
 
-<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-- Bootstrap -->
+<link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/yeti/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 <!-- Font Awesome icons -->
@@ -21,7 +22,6 @@
 
 <!-- pkgdown -->
 <link href="../pkgdown.css" rel="stylesheet">
-<script src="../jquery.sticky-kit.min.js"></script>
 <script src="../pkgdown.js"></script>
 
 <!-- mathjax -->
@@ -34,9 +34,10 @@
   </head>
 
   <body>
-    <div class="container template-reference-topic">
+    <div class="container">
       <header>
-      <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
@@ -55,7 +56,6 @@
   <a href="../reference/index.html">Reference</a>
 </li>
       </ul>
-      
       <ul class="nav navbar-nav navbar-right">
         <li>
   <a href="https://alanarnholt.github.io/">Alan T. Arnholt</a>
@@ -70,16 +70,15 @@
     </div><!--/.nav-collapse -->
   </div><!--/.container -->
 </div><!--/.navbar -->
-
       
       </header>
 
-      <div class="row">
-  <div class="col-md-9 contents">
-    <div class="page-header">
-    <h1>Wilcox Exact Test</h1>
-    </div>
+      <div class="page-header">
+  <h1>Wilcox Exact Test</h1>
+</div>
 
+<div class="row">
+  <div class="col-md-9">
     
     <p>Performs exact one sample and two sample Wilcoxon tests on vectors of data.</p>
     
@@ -87,7 +86,7 @@
     <pre><span class='fu'>wilcoxE.test</span>(<span class='no'>x</span>, <span class='kw'>y</span> <span class='kw'>=</span> <span class='kw'>NULL</span>, <span class='kw'>mu</span> <span class='kw'>=</span> <span class='fl'>0</span>, <span class='kw'>paired</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>,
   <span class='kw'>alternative</span> <span class='kw'>=</span> <span class='st'>"two.sided"</span>, <span class='kw'>conf.level</span> <span class='kw'>=</span> <span class='fl'>0.95</span>)</pre>
     
-    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a> Arguments</h2>
+    <h2>Arguments</h2>
     <dl class="dl-horizontal">
       <dt>x</dt>
       <dd>is a numeric vector of data values.  Non-finite (i.e. infinite or
@@ -107,42 +106,51 @@ must be one of <code>&quot;two.sided&quot;</code> (default), <code>&quot;greater
       <dd>confidence level of the interval</dd>
     </dl>
     
-    <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
+    <div class="Value">
+      <h2>Value</h2>
 
-    <p>A list with class <code>htest</code> containing the following components:</p>
-    
-    <h2 class="hasAnchor" id="details"><a class="anchor" href="#details"></a>Details</h2>
+      <p>A list with class <code>htest</code> containing the following components:</p>
+    </div>
 
-    <p>If only <code>x</code> is given, or if both <code>x</code> and <code>y</code> are given and
+    <div class="Details">
+      <h2>Details</h2>
+
+      <p>If only <code>x</code> is given, or if both <code>x</code> and <code>y</code> are given and
 <code>paired=&quot;TRUE&quot;</code>, a Wilcoxon signed rank test of the null hypothesis
 that the distribution of <code>x</code> (in the one sample case) or of <code>x -
 y</code> (in the paired two sample case) is symmetric about <code>mu</code> is
 performed.</p>
-    <p>Otherwise, if both <code>x</code> and <code>y</code> are given and
+      <p>Otherwise, if both <code>x</code> and <code>y</code> are given and
 <code>paired=&quot;FALSE&quot;</code>, a Wilcoxon rank sum test is done.  In this case, the
 null hypothesis is that the distributions of <code>x</code> and <code>y</code> differ by
 a location shift of <code>mu</code> and the alternative is that they differ by
 some other location shift (and the one-sided alternative <code>&quot;greater&quot;</code> is
 that <code>x</code> is shifted to the right of <code>y</code>).</p>
-    
-    <h2 class="hasAnchor" id="note"><a class="anchor" href="#note"></a>Note</h2>
+    </div>
 
-    <p>The function is rather primitive and should only be used for problems
+    <div class="Note">
+      <h2>Note</h2>
+
+      <p>The function is rather primitive and should only be used for problems
 with fewer than 19 observations as the memory requirements are rather large.</p>
-    
-    <h2 class="hasAnchor" id="references"><a class="anchor" href="#references"></a>References</h2>
+    </div>
 
-    <p>Gibbons, J.D. and Chakraborti, S. (1992). <em>Nonparametric
+    <div class="References">
+      <h2>References</h2>
+
+      <p>Gibbons, J.D. and Chakraborti, S. (1992). <em>Nonparametric
 Statistical Inference</em>. Marcel Dekker Inc., New York.</p>
-    <p>Myles Hollander &amp; Douglas A. Wolfe (1999), <em>Nonparametric Statistical
+      <p>Myles Hollander &amp; Douglas A. Wolfe (1999), <em>Nonparametric Statistical
 Inference</em>. New York: John Wiley &amp; Sons.</p>
-    
-    <h2 class="hasAnchor" id="see-also"><a class="anchor" href="#see-also"></a>See also</h2>
+    </div>
 
-    <p><code>wilcox.test</code></p>
-    
+    <div class="See also">
+      <h2>See also</h2>
 
-    <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
+      <p><code>wilcox.test</code></p>
+    </div>
+    
+    <h2 id="examples">Examples</h2>
     <pre class="examples"><div class='input'><span class='co'># Wilcoxon Signed Rank Test - Example 10.3</span>
 <span class='no'>PH</span> <span class='kw'>&lt;-</span> <span class='fu'>c</span>(<span class='fl'>7.2</span>,<span class='fl'>7.3</span>,<span class='fl'>7.3</span>,<span class='fl'>7.4</span>)
 <span class='fu'>wilcoxE.test</span>(<span class='no'>PH</span>, <span class='kw'>mu</span><span class='kw'>=</span><span class='fl'>7.25</span>, <span class='kw'>alternative</span><span class='kw'>=</span><span class='st'>"greater"</span>)</div><div class='output co'>#&gt; 
@@ -156,6 +164,7 @@ Inference</em>. New York: John Wiley &amp; Sons.</p>
 #&gt; sample estimates:
 #&gt; (pseudo)median 
 #&gt;            7.3 
+#&gt; 
 #&gt; </div><div class='input'><span class='co'># Wilcoxon Signed Rank Test (Dependent Samples) - Example 10.5 part c.</span>
 <span class='fu'>with</span>(<span class='kw'>data</span> <span class='kw'>=</span> <span class='no'>Aggression</span>,
 <span class='fu'>wilcoxE.test</span>(<span class='no'>violence</span>,<span class='no'>noviolence</span>,<span class='kw'>paired</span><span class='kw'>=</span><span class='fl'>TRUE</span>,<span class='kw'>alternative</span><span class='kw'>=</span><span class='st'>"greater"</span>))</div><div class='output co'>#&gt; 
@@ -169,6 +178,7 @@ Inference</em>. New York: John Wiley &amp; Sons.</p>
 #&gt; sample estimates:
 #&gt; (pseudo)median 
 #&gt;            4.5 
+#&gt; 
 #&gt; </div><div class='input'><span class='co'># Wilcoxon Rank Sum Test - Example 10.7</span>
 <span class='no'>x</span> <span class='kw'>&lt;-</span> <span class='fu'>c</span>(<span class='fl'>7.2</span>,<span class='fl'>7.2</span>,<span class='fl'>7.3</span>,<span class='fl'>7.3</span>)
 <span class='no'>y</span> <span class='kw'>&lt;-</span> <span class='fu'>c</span>(<span class='fl'>7.3</span>,<span class='fl'>7.3</span>,<span class='fl'>7.4</span>,<span class='fl'>7.4</span>)
@@ -183,26 +193,10 @@ Inference</em>. New York: John Wiley &amp; Sons.</p>
 #&gt; sample estimates:
 #&gt; difference in location 
 #&gt;                   -0.1 
+#&gt; 
 #&gt; </div><div class='input'><span class='fu'>rm</span>(<span class='no'>PH</span>, <span class='no'>x</span>, <span class='no'>y</span>)</div></pre>
   </div>
-  <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
-    <h2>Contents</h2>
-    <ul class="nav nav-pills nav-stacked">
-      <li><a href="#arguments">Arguments</a></li>
-      
-      <li><a href="#value">Value</a></li>
-
-      <li><a href="#details">Details</a></li>
-
-      <li><a href="#note">Note</a></li>
-
-      <li><a href="#references">References</a></li>
-
-      <li><a href="#see-also">See also</a></li>
-      
-      <li><a href="#examples">Examples</a></li>
-    </ul>
-
+  <div class="col-md-3">
     <h2>Author</h2>
     
 Alan T. Arnholt
@@ -211,14 +205,7 @@ Alan T. Arnholt
 </div>
 
       <footer>
-      <div class="copyright">
-  <p>Developed by Alan Arnholt.</p>
-</div>
-
-<div class="pkgdown">
-  <p>Site built with <a href="http://hadley.github.io/pkgdown/">pkgdown</a>.</p>
-</div>
-
+      <p>Built by <a href="http://hadley.github.io/pkgdown/">pkgdown</a>. Styled with <a href="http://getbootstrap.com">Bootstrap 3</a>.</p>
       </footer>
    </div>
 

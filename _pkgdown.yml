@@ -4,7 +4,7 @@ template:
   bootswatch: yeti
 
 navbar:
-  type: inverse
+  type:
   left:
   - text: Home
     href: index.html
@@ -14,4 +14,4 @@ navbar:
     - text: "Alan T. Arnholt"
       href: https://alanarnholt.github.io/
     - icon: fa-github fa-lg
-      href: https://github.com/alanarnholt/PASWR/ 
+      href: https://github.com/alanarnholt/PASWR/
