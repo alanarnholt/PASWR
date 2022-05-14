@@ -4,7 +4,7 @@ PASWR
 ### Version 1.3
 
 [![Travis-CI Build Status](https://travis-ci.org/alanarnholt/PASWR.svg?branch=master)](https://travis-ci.org/alanarnholt/PASWR)
-[![Downloads from the RStudio CRAN mirror](http://cranlogs.r-pkg.org/badges/PASWR)](http://cran.rstudio.com/package=PASWR)
+[![Downloads from the RStudio CRAN mirror](https://cranlogs.r-pkg.org/badges/PASWR)](https://cran.rstudio.com/package=PASWR)
 
 ### Alan T. Arnholt
 
@@ -44,7 +44,7 @@ To install the **PASWR** package, type the following at the **R** prompt:
 devtools::install_github('alanarnholt/PASWR')
 ```
     
-It is possible to install **PASWR** with [GIT](http://git-scm.com/) and the **R CMD build** assuming you have GIT installed and the appropriate tools to build **R** from source.
+It is possible to install **PASWR** with [GIT](https://git-scm.com/) and the **R CMD build** assuming you have GIT installed and the appropriate tools to build **R** from source.
 
 ```bash
 git clone https://github.com/alanarnholt/PASWR.git

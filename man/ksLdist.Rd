@@ -17,7 +17,7 @@ ksLdist(n = 10, sims = 10000, alpha = 0.05)
 Function to visualize the sampling distribution of \eqn{D_n}{D[n]} (the Kolmogorov-Smirnov one sample statistic) for simple and composite hypotheses
 }
 \examples{
-ksLdist(n = 10, sims = 15000, alpha = 0.05)
+ksLdist(n = 10, sims = 1500, alpha = 0.05)
 }
 \seealso{
 \code{\link{ksdist}}
