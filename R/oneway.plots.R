@@ -1,31 +1,31 @@
-#' Exploratory Graphs for Single Factor Designs
+#' @title Exploratory Graphs for Single Factor Designs
 #' 
-#' Function to create dotplots, boxplots, and design plot (means) for single
-#' factor designs
-#' 
+#' @description Function to create dotplots, boxplots, and design plot (means) for single factor designs
 #' 
 #' @param Y response variable for a single factor design
-#' @param fac1 predictor variable
+#' @param fac1 predictor variable (factor)
 #' @param COL a vector with two colors
-#' @author Alan T. Arnholt
-#' @seealso \code{\link{twoway.plots}}
-#' @keywords aplot
+#' 
+#' @author Alan T. Arnholt <arnholtat@@appstate.edu>
+#' 
+#' @seealso \code{\link{twoway.plots}}, \code{\link{checking.plots}}
+#' 
+#' @export
+#' 
 #' @examples
+#' with(data = Tire, oneway.plots(StopDist, tire))
 #' 
-#' with(data = Tire, 
-#' oneway.plots(StopDist, tire))
-#' 
-#' @export oneway.plots
-oneway.plots <-
-function(Y,fac1,COL=c("#A9E2FF","#0080FF"))
-{
-par(mfrow=c(1,3),pty="s")
-YL <- range(Y)
-dotchart(x=Y,groups=fac1,color="#0080FF",pch=1,
-xlab=deparse(substitute(Y)),xlim=YL,
-gdata=tapply(Y,fac1,mean),gpch=17)
-plot(Y~fac1,col="#A9E2FF",ylab=deparse(substitute(Y)),ylim=YL)
-plot.design(Y~fac1,ylab=deparse(substitute(Y)),ylim=YL)
-par(mfrow=c(1,1),pty="m")
+#' @keywords hplot
+#############################################################
+oneway.plots <- function(Y, fac1, COL = c("#A9E2FF","#0080FF")){
+  opar <- par(no.readonly = TRUE)
+  par(mfrow = c(2, 2), pty = "m",mar = c(4.1, 2.1, 1.1, 1.1))
+  YL <- range(Y)
+  dotchart(x = Y, groups = fac1, color = COL[2], pch = 1,
+           xlab = deparse(substitute(Y)), xlim = YL,
+           gdata = tapply(Y, fac1, mean), gpch = 17)
+  boxplot(Y, col = COL[1], xlab = deparse(substitute(Y)), horizontal = TRUE)
+  boxplot(Y ~ fac1, col = COL[1], horizontal = FALSE, xlab = deparse(substitute(fac1)))
+  plot.design(Y ~ fac1,  ylim = YL, xlab = "Main Factor")
+  on.exit(par(opar))
 }
-
