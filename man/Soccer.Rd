@@ -28,7 +28,7 @@ whereas, in 1994 and in 1990, only 24 teams participated. The data frame
 \code{Soccer} contains three columns: \code{CGT}, \code{Game}, and
 \code{Goals}. All of the information contained in \code{Soccer} is
 indirectly available from the FIFA World Cup website, located at
-\url{http://fifaworldcup.yahoo.com/}.
+\url{https://fifa.com/}.
 }
 \examples{
 

@@ -18,7 +18,7 @@ A data frame with 22 observations on the following 14 variables.
 }
 }
 \source{
-\url{http://www.baseball-reference.com/about/bat_glossary.shtml}
+\url{https://www.baseball-reference.com/about/bat_glossary.shtml}
 }
 \description{
 Baseball statistics for George Herman Ruth (The Bambino or The Sultan Of

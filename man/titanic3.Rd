@@ -26,7 +26,7 @@ A data frame with 1309 observations on the following 14 variables:
 \item{home.dest}{Home/Destination} }
 }
 \source{
-\url{http://biostat.mc.vanderbilt.edu/twiki/pub/Main/DataSets/titanic.html}
+\url{https://hbiostat.org/data/repo/titanic.html}
 }
 \description{
 The \code{titanic3} data frame describes the survival status of individual

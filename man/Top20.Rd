@@ -11,7 +11,7 @@ A data frame with 15 observations on the following variable:
 }
 }
 \source{
-\url{http://www.atptennis.com/en/}
+\url{https://www.atptour.com/}
 }
 \description{
 \code{Top20} contains data (in millions of dollars) corresponding to the
