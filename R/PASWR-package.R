@@ -1737,7 +1737,7 @@ NULL
 #' \code{Soccer} contains three columns: \code{CGT}, \code{Game}, and
 #' \code{Goals}. All of the information contained in \code{Soccer} is
 #' indirectly available from the FIFA World Cup website, located at
-#' \url{https://fifa.com/}.
+#' \url{https://www.fifa.com/}.
 #' 
 #' @name Soccer
 #' @docType data
