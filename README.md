@@ -4,7 +4,12 @@ PASWR
 ### Version 1.3
 
 [![Travis-CI Build Status](https://travis-ci.org/alanarnholt/PASWR.svg?branch=master)](https://travis-ci.org/alanarnholt/PASWR)
-[![Downloads from the RStudio CRAN mirror](https://cranlogs.r-pkg.org/badges/PASWR)](https://cran.rstudio.com/package=PASWR)
+
+[![Downloads from the RStudio CRAN mirror](https://cranlogs.r-pkg.org/badges/PASWR)](https://cran.r-project.org/package=PASWR)
+
+[![CRAN
+version](https://www.r-pkg.org/badges/version/PASWR)](https://cran.r-project.org/package=PASWR)
+![](https://cranlogs.r-pkg.org/badges/grand-total/PASWR)
 
 ### Alan T. Arnholt
 
