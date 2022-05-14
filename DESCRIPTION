@@ -6,7 +6,7 @@ Date: 2022-05-14
 Authors@R: c(
     person("Alan", "Arnholt", email = "arnholtat@appstate.edu", role = c("aut", "cre"))
     )
-Maintainer: Alan T. Arnholt <arnholtat@appstate.edu>       
+Maintainer: Alan Arnholt <arnholtat@appstate.edu>       
 Description: Functions and data sets for the text Probability and Statistics
     with R.
 Depends:

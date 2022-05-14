@@ -135,7 +135,7 @@ NULL
 #' }
 #' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. (2008)
 #' \emph{Probability and Statistics with R}. Chapman & Hall/CRC.
-#' @source \url{http://www.baseball-reference.com/about/bat_glossary.shtml}
+#' @source \url{https://www.baseball-reference.com/about/bat_glossary.shtml}
 #' @keywords datasets
 #' @examples
 #' 
@@ -1737,7 +1737,7 @@ NULL
 #' \code{Soccer} contains three columns: \code{CGT}, \code{Game}, and
 #' \code{Goals}. All of the information contained in \code{Soccer} is
 #' indirectly available from the FIFA World Cup website, located at
-#' \url{http://fifaworldcup.yahoo.com/}.
+#' \url{https://fifa.com/}.
 #' 
 #' @name Soccer
 #' @docType data
@@ -2129,7 +2129,7 @@ NULL
 #' Applications to Linear Models, Logistic Regression, and Survival Analysis}.
 #' Springer.
 #' @source
-#' \url{http://biostat.mc.vanderbilt.edu/twiki/pub/Main/DataSets/titanic.html}
+#' \url{https://hbiostat.org/data/repo/titanic.html}
 #' @keywords datasets
 #' @examples
 #' 
@@ -2183,7 +2183,7 @@ NULL
 #' }
 #' @references Ugarte, M. D., Militino, A. F., and Arnholt, A. T. (2008)
 #' \emph{Probability and Statistics with R}. Chapman & Hall/CRC.
-#' @source \url{http://www.atptennis.com/en/}
+#' @source \url{https://www.atptour.com/}
 #' @keywords datasets
 #' @examples
 #' 
